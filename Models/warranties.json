@@ -1,0 +1,14 @@
+{
+  "Warranties": [
+    {
+      "Brand": "Nissan",
+      "PowertrainWarranties": [
+        {
+          "ModelYearsCovered": "2000,2021",
+          "PowertrainYears": 5,
+          "PowertrainMiles": 60000
+        }
+      ]
+    }
+  ]
+}

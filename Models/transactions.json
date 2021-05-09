@@ -1,0 +1,14 @@
+{
+  "Transactions": [
+    {
+      "StockNumber": "CT2944",
+      "SoldYear": 2019,
+      "CreatedOn": "6/29/2018",
+      "Age": "3",
+      "Year": 2019,
+      "Make": "Nissan",
+      "Model": "Rogue",
+      "Mileage": 60000
+    }
+  ]
+}

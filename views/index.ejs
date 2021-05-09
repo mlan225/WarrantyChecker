@@ -1,0 +1,82 @@
+<%- include partials/Header.ejs %>
+
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+      <thead class="thead-light"> 
+        <th>
+          #
+        </th>
+        <th>
+          Stock Number
+        </th>
+        <th>
+          SoldYear
+        </th>
+        <th>
+          Created On
+        </th>
+        <th>
+          Age
+        </th>
+        <th>
+          Year
+        </th>
+        <th>
+          Make
+        </th>
+        <th>
+          Model
+        </th>
+        <th>
+          Mileage
+        </th>
+        <th>
+          Warranty Status
+        </th>
+      </thead>
+      <tbody>
+        <%
+          var index = 1; 
+          transactions.forEach(transaction => { %>
+          <tr>
+            <td>
+            <%- index %>.
+            </td>
+            <td>
+              <%- transaction.StockNumber %>
+            </td>
+            <td>
+              <%- transaction.SoldYear %>
+            </td>
+            <td>
+              <%- transaction.CreatedOn %>
+            </td>
+            <td>
+              <%- transaction.Age %>
+            </td>
+            <td>
+              <%- transaction.Year %>
+            </td>
+            <td>
+              <%- transaction.Make %>
+            </td>
+            <td>
+              <%- transaction.Model %>
+            </td>
+            <td>
+              <%- transaction.Mileage %>
+            </td>
+            <td class="<%- transaction.WarrantyStatus == false ? 'outOfWarranty' : '' %>">
+              <%- transaction.WarrantyStatus %>
+            </td>
+          </tr>
+        <%  
+          index++;
+        }); %>
+      </tbody>
+    </div>
+  </div>
+</div>
+
+<%- include partials/Footer.ejs %>
